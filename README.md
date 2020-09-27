@@ -48,7 +48,7 @@
 ### Built With
 
 * [Python](python)
-* [Machine learning](machine learning)
+* [Flask](flask)
 
 
 
