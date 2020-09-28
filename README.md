@@ -9,11 +9,10 @@
   <p align="center">
     In this i've tried to predict the probability of a person having diabetes based on some data fields...
     <br />
-    <a href="https://github.com/Abhayparashar31/Diabetes-prediction
-/"><strong>Explore the Project »</strong></a>
+    <a href="https://abhay31-diabetes-prediction.herokuapp.com/"><strong>View Project »</strong></a>
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://github.com/Abhayparashar31/Diabetes-prediction">View Codes</a>
     ·
     <a>Report Bug -> parasharabhay13@gmail.com</a>
     
