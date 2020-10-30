@@ -14,7 +14,6 @@ def hello_world():
 
 @app.route('/predict',methods=['POST','GET'])
 def predict():
-    #int_features=[float(x) for x in request.form.values()]
     text1 = request.form['1']
     text2 = request.form['2']
     text3 = request.form['3']
@@ -28,11 +27,11 @@ def predict():
     print(row_df)
     prediction=model.predict_proba(row_df)
     output='{0:.{1}f}'.format(prediction[0][1], 2)
-
+    output = str(float(output)*100)+'%'
     if output>str(0.5):
-        return render_template('index.html',pred='You might have chance of having diabetes.\nProbability of having Diabetes is {}'.format(output))
+        return render_template('result.html',pred=f'You have chance of having diabetes.\nProbability of having Diabetes is {output}')
     else:
-        return render_template('index.html',pred='You are safe.\n Probability of having diabetes is {}'.format(output))
+        return render_template('result.html',pred=f'You are safe.\n Probability of having diabetes is {output}')
 
 
 
